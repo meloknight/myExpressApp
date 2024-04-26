@@ -12,7 +12,7 @@ router.get("/", function (req, res, next) {
 // GET specific user by ID
 router.get("/:id", function (req, res, next) {
   const { id } = req.params;
-  console.log(`Hello user with id: ${req.params}`);
+  console.log(`Hello user with id: ${id}`);
   res.status(200).json(req.params);
 });
 
